@@ -31,6 +31,7 @@ header div img {
     align-items: center;
     margin-left: 30px;
     margin-right: 30px;
+    padding: 10px;
 }
 
 #search img{
@@ -116,9 +117,6 @@ header div img {
 }
 
 
-.wrapper-fixed {
-    position: fixed;
-}
 
 aside {
     background-color: #3D246C;
@@ -129,6 +127,10 @@ aside {
     gap: 1.4rem;
     color: white;
     font-family: "Inter", "Roboto", sans-serif;
+}
+
+.wrapper-fixed {
+    position: fixed;
 }
 
 ul {
@@ -210,32 +212,48 @@ main {
     background-color: #9F91CC;
     grid-row: 2 / 5;
     font-family: "Inter", "Roboto", sans-serif;
+    padding: 20px;
 }
 
 .wrapper {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 11px;
 }
 
 .project {
-    background: linear-gradient(to left, white 96%, #8a2be2 96%, #ee82ee);
+    background: linear-gradient(to left, white 97%, #8a2be2 97%, #3D246C);
     border-radius: 13px 4px 4px 13px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h3,
+.project p {
+    padding: 10px 20px;
+    margin-left: 4%;
 }
 
 .action-buttons {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 30px;
     justify-content: flex-end;
+    margin-top: auto;
+    margin-right: 5%;
 }
 
 .action-buttons img{
     width: 2rem;
     cursor: pointer;
 }
+
