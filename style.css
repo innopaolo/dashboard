@@ -221,20 +221,36 @@ main {
     padding: 20px;
 }
 
+.flexwrap {
+    display: flex;
+    justify-content: space-between;  
+}
+
+#announcement {
+    margin-right: 12%;
+}
+
 .wrapper {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
+.wrapper h2 {
+    grid-row: 1 / 2;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
 .cards {
+    grid-row: 2 / 4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 11px;
+    gap: 25px;
 }
 
 .project {
-    background: linear-gradient(to left, white 97%, #8a2be2 97%, #3D246C);
+    background: linear-gradient(to left, #e4ddf4 97%, #8a2be2 97%, #3D246C);
     border-radius: 13px 4px 4px 13px;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 1.5rem;
@@ -242,6 +258,13 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.project:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px black;
 }
 
 .project h3,
@@ -262,4 +285,6 @@ main {
     width: 2rem;
     cursor: pointer;
 }
+
+
 

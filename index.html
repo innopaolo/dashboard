@@ -19,7 +19,7 @@
         <header>
             <div id="search">
                 <label for="search"><img src="search.svg" alt="magnifying glass"></label>   
-                <input type="search" id="search" size="40">
+                <input autocomplete="off" "search" id="search" size="40">
             </div>
             <div id="user">
                 <img src="notification.svg" alt="notification bell">
@@ -67,8 +67,8 @@
             </div>
         </aside>
         <main>
-            <h2>Your projects</h2>
             <div class="wrapper">
+                <h2>Your projects</h2>
                 <div class="cards">
                     <div class="project">
                         <h3>To do</h3>
@@ -137,9 +137,19 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div id="announcements"></div>
-                    <div id="trending"></div>
+                <div class="extras">
+                    <div id="announcements">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <h2>Trending</h2>
+                    <div id="trending">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </main>
