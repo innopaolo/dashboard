@@ -286,5 +286,24 @@ main {
     cursor: pointer;
 }
 
+.extras {
+    grid-row: 1 / 4;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12pxpx;
+}
+
+#announcements {
+    background-color: #e4ddf4;
+    border-radius: 13px;
+    padding: 12px;
+    margin-bottom: 50px;
+}
+
+#trending img {
+    width: 4rem;
+    border-radius: 50%;
+}
 
 
