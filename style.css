@@ -115,12 +115,10 @@ header div img {
    cursor: pointer;
 }
 
-#greeting,
-.buttons {
-    margin-top: -30px;
-    margin-bottom: -20px;
-}
 
+.wrapper-fixed {
+    position: fixed;
+}
 
 aside {
     background-color: #3D246C;
@@ -211,14 +209,33 @@ li:hover {
 main {
     background-color: #9F91CC;
     grid-row: 2 / 5;
+    font-family: "Inter", "Roboto", sans-serif;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 2fr 1fr;
+}
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 11px;
 }
 
 .project {
-    background: linear-gradient(to left, white 98%, #8a2be2 98%, #ee82ee);
+    background: linear-gradient(to left, white 96%, #8a2be2 96%, #ee82ee);
+    border-radius: 13px 4px 4px 13px;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.action-buttons img{
+    width: 2rem;
+    cursor: pointer;
 }
