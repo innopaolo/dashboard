@@ -157,6 +157,7 @@ li:hover {
     gap: 10px;
     font-weight: 700;
     height: 100px;
+    margin-bottom: 50px;
 }
 
 #logo h1:hover {
@@ -166,6 +167,11 @@ li:hover {
 
 #logo div {
     width: 3rem;
+}
+
+.dash-links,
+.secondary-links {
+    margin-bottom: 70px;
 }
 
 
