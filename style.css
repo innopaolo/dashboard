@@ -221,11 +221,6 @@ main {
     padding: 20px;
 }
 
-.flexwrap {
-    display: flex;
-    justify-content: space-between;  
-}
-
 #announcement {
     margin-right: 12%;
 }
@@ -233,7 +228,7 @@ main {
 .wrapper {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .wrapper h2 {
@@ -245,7 +240,7 @@ main {
 .cards {
     grid-row: 2 / 4;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
@@ -281,29 +276,63 @@ main {
     margin-right: 5%;
 }
 
-.action-buttons img{
+.action-buttons img {
     width: 2rem;
-    cursor: pointer;
 }
+
+
 
 .extras {
     grid-row: 1 / 4;
-    margin-left: 14px;
+    margin-left: 24px;
     display: flex;
     flex-direction: column;
     gap: 12pxpx;
 }
 
+.extras h2 {
+    text-shadow: 0 0 10px #FFDBC3;
+}
+
 #announcements {
+    margin-bottom: 100px;
+}
+
+#announcements,
+#trending {
     background-color: #e4ddf4;
     border-radius: 13px;
-    padding: 12px;
-    margin-bottom: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px #FFDBC3;
 }
 
 #trending img {
     width: 4rem;
     border-radius: 50%;
+    margin-right: 15px;
 }
 
+#trending div {
+    display: flex;
+    align-items: center;
+}
 
+#trending p {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+main a {
+    color: #3d246c;
+}
