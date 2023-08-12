@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: white;
 }
 
 .container {
@@ -16,9 +18,82 @@ header {
 aside {
     background-color: purple;
     grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 1.4rem;
 }
 
 main {
     background-color: green;
     grid-row: 2 / 4;
 }
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+li {
+    margin-bottom: 17px;
+    font-family: "Inter", "Roboto", sans-serif;
+    font-weight: 300;
+    text-shadow: 1px 1px 10px #000;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", "Roboto", sans-serif;
+    font-weight: 700;
+    height: 100px;
+}
+
+#logo div {
+    width: 3rem;
+}
+
+
+.dash-links ul li::before,
+.secondary-links ul li::before {
+    content: ""; 
+    display: inline-block;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px; 
+    vertical-align: middle;
+}
+
+.dash-links ul li:nth-child(1)::before {
+    background-image: url("home.svg");
+}
+.dash-links ul li:nth-child(2)::before {
+    background-image: url("profile.svg");
+}
+.dash-links ul li:nth-child(3)::before {
+    background-image: url("messages.svg");
+}
+.dash-links ul li:nth-child(4)::before {
+    background-image: url("history.svg");
+}
+.dash-links ul li:nth-child(5)::before {
+    background-image: url("tasks.svg");
+}
+.dash-links ul li:nth-child(6)::before {
+    background-image: url("communities.svg");
+}
+
+.secondary-links ul li:nth-child(1)::before {
+    background-image: url("settings.svg");
+}
+.secondary-links ul li:nth-child(2)::before {
+    background-image: url("support.svg");
+}
+.secondary-links ul li:nth-child(3)::before {
+    background-image: url("privacy.svg");
+}
+
+
+
+
